@@ -29,7 +29,7 @@ public class PgnTagAndValue {
 
     private static PgnTag determinePgnTag(final String line) {
         for (final PgnTag pgnTag : PgnTag.values()) {
-            if (line.startsWith("[" + pgnTag.getTag() + " ")) {
+            if (line.toLowerCase.startsWith("[" + pgnTag.getTag().toLowerCase() + " ")) {
                 return pgnTag;
             }
         }
